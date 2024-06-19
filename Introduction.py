@@ -11,7 +11,7 @@ if_stmt ::=  "if" assignment_expression ":" suite
 """
 print(msg)
 
-nota_list = ['::=','|','*','+','?','[...]','(...)','<...>','\"...\"']
+nota_list = ['::=','|','*','+','[...]','(...)','<...>','\"...\"']
 
 # 信息输入
 def msginput():
@@ -42,9 +42,6 @@ match (search):
     case ('+'):
         print(f'\033[4;34;46m{search}解释:\033[0m 表示“对前一项重复1次或更多次”\n'
               '例：\033[1;30;47mexponent ::= （"a"..."z"）+\033[0m  意思为词法exponent是由1个（不为空）或多个小写a到z字母组成.')
-    case ('?'):
-        print(f'\033[4;34;46m{search}解释:\033[0m 表示“对前一项是0或1次”\n'
-              '例：\033[1;30;47mexponent ::= （"a"..."z"）？\033[0m  意思为词法exponent是由1个或0个小写a到z字母组成.')
     case ('[...]'):
         print(f'\033[4;34;46m{search}解释:\033[0m 表示“此项可选”\n'
               '例：\033[1;30;47mexponent ::= "test"["a"|"z"]\033[0m  意思为词法exponent可以是testa也可以是testz也可以是test.')
