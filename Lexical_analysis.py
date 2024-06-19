@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-#####标识符#######
+##### 2.3 标识符和关键字 #####
 # Python 3.0 引入了 ASCII 之外的更多字符（请参阅 PEP 3131）。这些字符的分类使用 unicodedata 模块中的 Unicode 字符数据库版本。标识符的长度没有限制，但区分大小写。
 
 def print_unicode(codepoint: str = None):
@@ -47,11 +47,3 @@ def print_unicode(codepoint: str = None):
 
 
 print_unicode('110BD')
-
-
-
-# a = 4.54
-# b = 'haha'
-# print(f'%s的年龄是%d' % (b,a))
-# print('%(language)s has %(number)#x  quote types.' %
-#       {'language': "Python", "number": 2})
